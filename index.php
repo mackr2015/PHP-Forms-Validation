@@ -29,10 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     <div class="container">
-        <h1>Login</h1>
+        
         <form action="" method="post">
+            <h1 class="center">Login</h1>
 
-            <label>Username</label><br>
+            <label>Username</label>
+            <span>Must be 3–8 characters and use combination letters, numbers, or _.</span>
             <input type="text" name="username" value="<?= htmlspecialchars($old['username'] ?? '') ?>">
 
             <label for="email">Email</label>

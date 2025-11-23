@@ -25,8 +25,8 @@ function validate_form($type, $value)
         if (!isset($username) || trim($username) === '') {
             return "Username is required.";
         }
-        if (!preg_match('/^[A-Za-z0-9_]{3,20}$/', $username)) {
-            return "Username must be 3–20 characters and use only letters, numbers, or _.";
+        if (!preg_match('/^[A-Za-z0-9_]{3,8}$/', $username)) {
+            return "Wrong username format. Please try again";
         }
         return true;
     };

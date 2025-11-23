@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-size: 16px;
     color: #333;
@@ -7,12 +10,13 @@ body {
 
 
 input {
-    height: 35px;
+    height: 40px;
     margin-bottom: 15px;
     width: 100%;
     display: block;
     padding: 3px 5px;
     font-size: 16px;
+    border:2px solid #888;
 }
 label {
     display: block;
@@ -22,17 +26,33 @@ label {
 }
 
 form {
-    width: 500px;
+    width: 550px;
+    margin: 25px auto;
+    background: rgba(238, 238, 238, 0.4);
+    padding: 25px 50px;
+}
+
+form span {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
 }
 
 .btn {
     margin: 20px 0;
+    font-weight: bold;
+    font-size: 14px;
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     text-transform: uppercase;
     line-height: 1;
     height: inherit;
     cursor: pointer;
+    background: #009744;
+    border:2px solid #009744;
+    color: #fff;
+    border: none;
 }
 .container {
     max-width: 1000px;
@@ -43,4 +63,8 @@ form {
 .errors  li {
     color: red;
     margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
 }
