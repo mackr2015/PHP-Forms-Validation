@@ -17,3 +17,4 @@
     -   [x] Check for empty fields
     -   [x] Reg expression for username, email and password formatting
     -   [x] Session used to send data accross different files/pages
+    -   []  Format the error messages to appear next to the fields

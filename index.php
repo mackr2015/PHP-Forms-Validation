@@ -45,18 +45,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <input class="btn" type="submit" value="Login">
 
+            <?php 
+            // Prikazivanje grešaka
+            if (!empty($errors)) {
+                echo "<ul class='errors'>";
+                foreach ($errors as $field => $error) {
+                    echo "<li>$error</li>";
+                }
+                echo "</ul>";
+            }
+            ?>
+
         </form>
 
-        <?php 
-        // Prikazivanje grešaka
-        if (!empty($errors)) {
-            echo "<ul class='errors'>";
-            foreach ($errors as $field => $error) {
-                echo "<li>$error</li>";
-            }
-            echo "</ul>";
-        }
-        ?>
+        
     </div>
     
     
